@@ -1,0 +1,31 @@
+##################################################################
+# Syntax Coloring Map For  Fixaj
+##################################################################
+
+##################################################################
+# Datatypes (KEYWORD1)
+##################################################################
+
+FixajSerial	KEYWORD1
+
+##################################################################
+# Methods and Functions (KEYWORD2)
+##################################################################
+
+kesme KEYWORD2
+ilkDurum KEYWORD2
+fixajSerial KEYWORD2
+
+dinle KEYWORD2
+my_node_device_eui2 KEYWORD2
+
+my_node_app_eui2 KEYWORD2
+my_node_app_key2 KEYWORD2
+
+OTAA_BAND KEYWORD2
+OTAA_PERIOD KEYWORD2
+
+LEDrxtx KEYWORD2
+
+RAK_LORA_BAND KEYWORD2
+RX KEYWORD2
