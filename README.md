@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # LoRaWAN Güvenliği ve Şifreleme
 
 Bu proje, LoRaWAN üzerinden veri gönderimi sırasında şifreleme ve güvenlik önlemlerini ele almaktadır. Aşağıda, LoRaWAN veri iletiminde karşılaşılan potansiyel güvenlik açıkları ve bu açıkları kapatmak için yapılan iyileştirmeler bulunmaktadır.
@@ -18,7 +18,7 @@ LoRaWAN gibi iletişim sistemlerinde veri güvenliği çok önemlidir. Özellikl
 
 Aşağıda, LoRaWAN üzerinden veri iletimi yapan bir örnek kod bulunmaktadır. Bu kodda güvenlik ve şifreleme ile ilgili önemli eksiklikler vardır.
 
-```cpp
+```
 #include <Wire.h>
 #include "ClosedCube_HDC1080.h"
 #include <FixajSerial.h>
@@ -84,7 +84,7 @@ void sendSensorData() {
 
 Şifreleme eklemek için AES gibi güçlü bir algoritma kullanılabilir. Her veri iletimi için farklı bir `Initialization Vector (IV)` kullanarak, şifreli verilerin güvenliğini sağlayabiliriz. Aşağıda, güvenliği artırmak için AES şifrelemesi eklenmiş ve verinin şifreli olarak gönderildiği güncellenmiş kod örneği bulunmaktadır:
 
-```cpp
+```
 #include <Wire.h>
 #include "ClosedCube_HDC1080.h"
 #include <AES.h>
@@ -154,6 +154,4 @@ void sendEncryptedSensorData() {
 2. **Rastgele IV Kullanımı**: Her veri iletimi için farklı bir IV kullanarak, aynı verinin şifrelenmesinin bile farklı şifreli çıktılar üretmesini sağladık.
 3. **Veri Bütünlüğü**: HMAC veya dijital imza ile veri doğrulaması eklenebilir.
 
-
-```
 
